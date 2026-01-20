@@ -1,78 +1,23 @@
 const houses = [
-  {
-    name: "Sot dg",
-    type: "Condo",
-    price: "$120,000",
-    location: "Phnom Penh",
-    images: [
-      "images/houses/house1.jpg",
-      "images/houses/house1-1.jpg",
-      "images/houses/house1-2.jpg"
-    ],
-    description:
-      "Luxury property with modern design, premium materials, private balcony, parking, security and great location."
-  },
-
-  {
-    name: "Ocean Breeze Villa",
-    type: "Villa",
-    price: "$320,000",
-    location: "Sihanoukville",
-    images: [
-      "images/houses/villa1.jpg",
-      "images/houses/villa2.jpg",
-      "images/houses/villa3.jpg"
-    ],
-    description:
-      "Beautiful sea-view villa with private pool, garden, and luxury finishing."
-  },
-
-  {
-    name: "City Townhouse",
-    type: "Townhouse",
-    price: "$180,000",
-    location: "Phnom Penh",
-    images: [
-      "images/houses/town1.jpg",
-      "images/houses/town2.jpg",
-      "images/houses/town3.jpg"
-    ],
-    description:
-      "Modern townhouse located in the heart of the city with parking and security."
-  }
+  ...Array(20).fill().map((_, i) => ({ name: `Sot dg ${i+1}`, type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" })),
+  ...Array(20).fill().map((_, i) => ({ name: `Luxury Villa ${i+1}`, type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" })),
+  ...Array(20).fill().map((_, i) => ({ name: `Modern Town ${i+1}`, type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" }))
 ];
 
-/* ================= SAFE ID ================= */
 const params = new URLSearchParams(window.location.search);
-let id = parseInt(params.get("id"));
-
-/* IF WRONG ID → GO BACK HOME */
-if (isNaN(id) || !houses[id]) {
-  window.location.href = "index.html";
-}
-
-/* ================= DATA ================= */
+const id = parseInt(params.get("id"));
 const house = houses[id];
 
-/* TEXT */
-document.getElementById("title").textContent = house.name;
-document.getElementById("location").textContent = "📍 " + house.location;
-document.getElementById("type").textContent = "🏠 " + house.type;
-document.getElementById("price").textContent = house.price;
-document.getElementById("description").textContent = house.description;
-
-/* IMAGES */
-document.getElementById("mainImg").src = house.images[0];
-document.getElementById("img2").src = house.images[1];
-document.getElementById("img3").src = house.images[2];
-
-/* CLICK CHANGE IMAGE */
-document.getElementById("img2").onclick = () => {
-  document.getElementById("mainImg").src = house.images[1];
-};
-
-document.getElementById("img3").onclick = () => {
-  document.getElementById("mainImg").src = house.images[2];
-};
-
-
+if (house) {
+  document.getElementById("title").innerText = house.name;
+  document.getElementById("location").innerText = "📍 " + house.location;
+  document.getElementById("type").innerText = "🏠 " + house.type;
+  document.getElementById("price").innerText = house.price;
+  
+  // Set Images
+  document.getElementById("mainImg").src = house.image;
+  document.getElementById("img2").src = house.image;
+  document.getElementById("img3").src = house.image;
+} else {
+  window.location.href = "index.html";
+}

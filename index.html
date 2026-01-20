@@ -8,111 +8,68 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-<header class="main-header">
-  <div class="header-left">
-    <select id="categoryFilter">
-      <option value="all">All</option>
-      <option value="Condo">Condo</option>
-      <option value="Villa">Villa</option>
-      <option value="Townhouse">Townhouse</option>
-      <option value="Penthouse">Penthouse</option>
-    </select>
+<body id="top">
+  <header class="main-header">
+    <div class="header-left">
+  <div class="search-container">
+    <div class="filter-group">
+      <select id="categoryFilter">
+        <option value="all">All Types</option>
+        <option value="Condo">Condos</option>
+        <option value="Villa">Villas</option>
+        <option value="Townhouse">Townhouses</option>
+      </select>
+    </div>
 
-    <div class="search-box">
+    <div class="divider"></div>
+
+    <div class="search-input-group">
       <i class="fas fa-search"></i>
-      <input type="text" id="searchInput" placeholder="Search house...">
+      <input type="text" id="searchInput" placeholder="Search by name or location...">
     </div>
   </div>
-
-<nav class="header-center">
-  <a href="#houseContainer">Home</a>
-  <a href="#experience">Experience</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<div class="header-right">
-<a href="#" class="social telegram">
-  <img src="/Webiste dad/images/icon/communication.png" alt="Telegram">
-</a>
-
-<a href="#" class="social facebook">
-  <img src="/Webiste dad/images/icon/telegram.png" alt="Facebook">
-</a>    
-
-<a href="#" class="social whatsapp">
-  <img src="/Webiste dad/images/icon/phone-call.png" alt="WhatsApp">
-</a>
 </div>
-</header>
-<main id="categoryWrapper">
-  </main>
 
+    <nav class="header-center">
+      <a href="#top">Home</a>
+      <a href="#condo-section">Condos</a>  
+      <a href="#villa-section">Villas</a>
+      <a href="#townhouse-section">Townhouses</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<section id="houseContainer" class="house-container" name="home"></section>
+    <div class="header-right">
+      <a href="#" class="social"><img src="images/icon/telegram.png" alt="Telegram"></a>
+      <a href="#" class="social"><img src="images/icon/communication.png" alt="Facebook"></a>    
+      <a href="#" class="social"><img src="images/icon/phone-call.png" alt="WhatsApp"></a>
+    </div>
+  </header>
 
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="experience-section">
-  <div>
-    <h2>Our Experience</h2>
-    <p>
-      With years of experience in the real estate market, we specialise in
-      modern condos, luxury villas, and premium penthouses across Cambodia.
-    </p>
+  <main id="categoryWrapper"></main>
 
-    <div class="exp-cards">
-      <div class="exp-card">
-        <h3>🏢 10+ Projects</h3>
-        <p>Residential developments across major cities</p>
-      </div>
-
-      <div class="exp-card">
-        <h3>🤝 Trusted Agents</h3>
-        <p>Professional consultation and honest pricing</p>
-      </div>
-
-      <div class="exp-card">
-        <h3>⭐ Happy Clients</h3>
-        <p>Hundreds of satisfied homeowners</p>
+  <section id="experience" class="experience-section">
+    <div>
+      <h2>Our Experience</h2>
+      <p>Modern condos, luxury villas, and premium penthouses across Cambodia.</p>
+      <div class="exp-cards">
+        <div class="exp-card"><h3>🏢 10+ Projects</h3><p>Residential developments</p></div>
+        <div class="exp-card"><h3>🤝 Trusted Agents</h3><p>Professional consultation</p></div>
+        <div class="exp-card"><h3>⭐ Happy Clients</h3><p>Satisfied homeowners</p></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- EXPANDED DETAIL CARD -->
-<section id="detailSection" class="detail-section">
-  <div class="detail-card">
-    <span class="detail-close" onclick="closeDetail()">✖</span>
-
-    <h2 id="detailTitle">House Name</h2>
-    <p id="detailLocation"></p>
-
-    <div class="detail-images">
-      <img id="img1">
-      <img id="img2">
-      <img id="img3">
+  <footer id="contact" class="footer">
+    <h2>Contact Us</h2>
+    <div class="footer-links">
+      <a href="#">📞 +855 XXX XXX XXX</a>
+      <a href="#">✉️ dreamhouse@email.com</a>
+      <a href="#">📍 Phnom Penh, Cambodia</a>
     </div>
+    <p>© 2026 DreamHouse. All rights reserved.</p>
+  </footer>
 
-    <p id="detailPrice" class="price"></p>
-    <p id="detailType"></p>
-  </div>
-</section>
-
-
-<footer id="contact" class="footer">
-  <h2>Contact Us</h2>
-  <p>Interested in a property? Let’s talk.</p>
-
-  <div class="footer-links">
-    <a href="#">📞 +855 XXX XXX XXX</a>
-    <a href="#">✉️ dreamhouse@email.com</a>
-    <a href="#">📍 Phnom Penh, Cambodia</a>
-  </div>
-
-  <p>© 2026 DreamHouse. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
