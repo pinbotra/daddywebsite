@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamHouse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header class="main-header">
+  <div class="header-left">
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="Condo">Condo</option>
+      <option value="Villa">Villa</option>
+      <option value="Townhouse">Townhouse</option>
+      <option value="Penthouse">Penthouse</option>
+    </select>
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Search house...">
+    </div>
+  </div>
+
+<nav class="header-center">
+  <a href="#home">Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="header-right">
+<a href="#" class="social telegram">
+  <img src="../Webiste dad/image/communication.png" alt="Telegram">
+</a>
+
+<a href="#" class="social facebook">
+  <img src="../Webiste dad/image/telegram.png" alt="Facebook">
+</a>    
+
+<a href="#" class="social whatsapp">
+  <img src="../Webiste dad/image/phone-call.png" alt="WhatsApp">
+</a>
+</div>
+</header>
+
+<section id="home" class="house-container"></section>
+
+<!-- MODAL -->
+<div class="modal" id="houseModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeDetails()">&times;</span>
+    <img id="modalImage" />
+    <h2 id="modalName"></h2>
+    <p id="modalLocation"></p>
+    <p id="modalType"></p>
+    <p id="modalPrice" class="price"></p>
+  </div>
+</div>
+
+<section id="houseContainer" class="house-container" name="home"></section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="experience-section">
+  <div>
+    <h2>Our Experience</h2>
+    <p>
+      With years of experience in the real estate market, we specialise in
+      modern condos, luxury villas, and premium penthouses across Cambodia.
+    </p>
+
+    <div class="exp-cards">
+      <div class="exp-card">
+        <h3>🏢 10+ Projects</h3>
+        <p>Residential developments across major cities</p>
+      </div>
+
+      <div class="exp-card">
+        <h3>🤝 Trusted Agents</h3>
+        <p>Professional consultation and honest pricing</p>
+      </div>
+
+      <div class="exp-card">
+        <h3>⭐ Happy Clients</h3>
+        <p>Hundreds of satisfied homeowners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPANDED DETAIL CARD -->
+<section id="detailSection" class="detail-section">
+  <div class="detail-card">
+    <span class="detail-close" onclick="closeDetail()">✖</span>
+
+    <h2 id="detailTitle">House Name</h2>
+    <p id="detailLocation"></p>
+
+    <div class="detail-images">
+      <img id="img1">
+      <img id="img2">
+      <img id="img3">
+    </div>
+
+    <p id="detailPrice" class="price"></p>
+    <p id="detailType"></p>
+  </div>
+</section>
+
+
+<footer id="contact" class="footer">
+  <h2>Contact Us</h2>
+  <p>Interested in a property? Let’s talk.</p>
+
+  <div class="footer-links">
+    <a href="#">📞 +855 XXX XXX XXX</a>
+    <a href="#">✉️ dreamhouse@email.com</a>
+    <a href="#">📍 Phnom Penh, Cambodia</a>
+  </div>
+
+  <p>© 2026 DreamHouse. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
