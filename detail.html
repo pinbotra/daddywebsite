@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Property Details</title>
-<link rel="stylesheet" href="detail.css">
+  <meta charset="UTF-8" />
+  <title>House Detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="detail.css">
 </head>
 <body>
 
-<a href="index.html" class="back-btn">← Back</a>
+<!-- BACK BUTTON -->
+<div class="back-wrapper">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
 
 <div class="detail-container">
 
-  <div class="gallery">
-    <img id="mainImg" class="main-img">
+  <!-- IMAGE GRID -->
+  <div class="image-grid">
+    <img id="mainImg" class="main-img" />
 
     <div class="side-images">
-      <img id="img2">
-      <img id="img3">
+      <img id="img2" />
+      <img id="img3" />
     </div>
   </div>
 
-  <div class="info">
+  <div class="detail-images">
+  <img id="mainImg" class="img-main">
+  <img id="img2">
+  <img id="img3">
+</div>
+
+
+  <!-- INFO CARD -->
+  <div class="detail-card">
     <h1 id="title"></h1>
-    <p id="location"></p>
-    <p id="type"></p>
+
+    <div class="meta">
+      <p id="location"></p>
+      <p id="type"></p>
+    </div>
+
     <h2 id="price"></h2>
 
-    <div class="desc">
-      Luxury property with modern design, premium materials, private balcony, parking, security and great location.
-    </div>
+    <p id="description"></p>
   </div>
 
 </div>

@@ -364,3 +364,53 @@ footer {
   object-fit: cover;
   border-radius: 12px;
 }
+/* The Header Bar between sections */
+.category-header-bar {
+    background-color: #ffc1cc; /* Pink color like your image */
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Change the Pink Bar to Cream */
+.category-header-bar {
+    background-color: #F5F5DC; /* Cream Color */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 1px solid #e2e2ca;
+    border-bottom: 1px solid #e2e2ca;
+}
+
+.category-header-bar h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+}
+
+/* REMOVE UNDERLINE FROM BUTTON */
+.btn-project {
+    text-decoration: none !important; /* This removes the underline */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #003366;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-project:hover {
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+}

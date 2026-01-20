@@ -1,99 +1,137 @@
+// ONE SINGLE DATA ARRAY
 const houses = [
-  { name: "Sot dg", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "/Website dad/images/houses/house1.jpg" },
-  { name: "Ocean Breeze Villa", type: "Villa", price: "$320,000", location: "Sihanoukville", image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae" },
-  { name: "City Townhouse", type: "Townhouse", price: "$180,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c" },
-  { name: "Golden Penthouse", type: "Penthouse", price: "$450,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" },
-  { name: "Palm Garden Villa", type: "Villa", price: "$290,000", location: "Kep", image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb" },
-  { name: "Riverside Condo", type: "Condo", price: "$135,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00" },
-  { name: "Sunset Townhome", type: "Townhouse", price: "$165,000", location: "Siem Reap", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914" },
-  { name: "Royal Signature Suite", type: "Penthouse", price: "$520,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811" },
-  { name: "Lakeview Condo", type: "Condo", price: "$145,000", location: "Siem Reap", image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" },
-  { name: "Emerald Pool Villa", type: "Villa", price: "$380,000", location: "Kampot", image: "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12" },
+  // --- 20 CONDOS ---
+  { name: "Sot dg 1", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg", images: ["images/houses/house1.jpg", "images/houses/house1-1.jpg"], description: "Luxury condo." },
+  { name: "Sot dg 2", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 3", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 4", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 5", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 6", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 7", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 8", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 9", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 10", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 11", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 12", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 13", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 14", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 15", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 16", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 17", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 18", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 19", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
+  { name: "Sot dg 20", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "images/houses/house1.jpg" },
 
-  /* ===== NEW 12 HOUSES ===== */
-  { name: "Blue Horizon Condo", type: "Condo", price: "$155,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1523217582562-09d0def993a6" },
-  { name: "Angkor Luxury Villa", type: "Villa", price: "$410,000", location: "Siem Reap", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c" },
-  { name: "Central Park Residence", type: "Condo", price: "$175,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1554995207-c18c203602cb" },
-  { name: "Riverfront Townhouse", type: "Townhouse", price: "$195,000", location: "Kandal", image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83" },
-  { name: "Diamond Sky Penthouse", type: "Penthouse", price: "$620,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1599423300746-b62533397364" },
-  { name: "Green Valley Villa", type: "Villa", price: "$350,000", location: "Battambang", image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b" },
-  { name: "Sunrise Condo", type: "Condo", price: "$140,000", location: "Kampot", image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" },
-  { name: "Modern Nest Townhouse", type: "Townhouse", price: "$185,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6" },
-  { name: "Royal Crown Penthouse", type: "Penthouse", price: "$710,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" },
-  { name: "Sea Pearl Villa", type: "Villa", price: "$460,000", location: "Koh Rong", image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" },
-  { name: "Urban Life Condo", type: "Condo", price: "$160,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1494526585095-c41746248156" },
-  { name: "Golden Leaf Townhouse", type: "Townhouse", price: "$170,000", location: "Takeo", image: "https://images.unsplash.com/photo-1576941089067-2de3c901e126" }
+  // --- 20 VILLAS ---
+  { name: "Luxury Villa 1", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 2", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 3", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 4", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 5", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 6", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 7", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 8", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 9", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 10", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 11", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 12", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 13", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 14", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 15", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 16", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 17", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 18", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 19", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+  { name: "Luxury Villa 20", type: "Villa", price: "$450,000", location: "Siem Reap", image: "images/houses/house2.jpg" },
+
+  // --- 20 TOWNHOUSES ---
+  { name: "Modern Town 1", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 2", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 3", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 4", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 5", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 6", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 7", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 8", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 9", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 10", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 11", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 12", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 13", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 14", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 15", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 16", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 17", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 18", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 19", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" },
+  { name: "Modern Town 20", type: "Townhouse", price: "$230,000", location: "Battambang", image: "images/houses/house3.jpg" }
 ];
 
-// ELEMENTS
-const houseContainer = document.getElementById("houseContainer");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 
-function openDetailPage(index) {
-  window.location.href = `detail.html?id=${index}`;
-}
-
-// RENDER
 function renderHouses(list) {
-  houseContainer.innerHTML = "";
-  list.forEach(house => {
-    const card = document.createElement("div");
-    card.className = "house-card";
-    card.innerHTML = `
-      <div class="image-box">
-        <img src="${house.image}" alt="${house.name}">
-      </div>
-      <div class="house-info">
-        <h3>${house.name}</h3>
-        <p>${house.location}</p>
-        <p>${house.type}</p>
-        <p class="price">${house.price}</p>
-        <div class="project-links">
-          <button class="btn-project" onclick="openDetailPage(${houses.indexOf(house)})">
-            View Details
-          </button>
-        </div>
-      </div>
-    `;
-    houseContainer.appendChild(card);
+  const wrapper = document.getElementById("categoryWrapper");
+  if (!wrapper) return; // Prevent error if element not found
+  wrapper.innerHTML = ""; 
+
+  const categories = ["Condo", "Villa", "Townhouse"];
+
+  categories.forEach(cat => {
+    const filteredList = list.filter(h => h.type === cat);
+
+    if (filteredList.length > 0) {
+      // 1. Create Cream Header
+      const sectionHeader = document.createElement("div");
+      sectionHeader.className = "category-header-bar";
+      sectionHeader.innerHTML = `<h2>${cat}s</h2>`;
+      wrapper.appendChild(sectionHeader);
+
+      // 2. Create Grid
+      const grid = document.createElement("section");
+      grid.className = "house-container"; 
+
+      filteredList.forEach(house => {
+        // We find the original index so Detail Page works
+        const originalIndex = houses.indexOf(house);
+        const card = document.createElement("div");
+        card.className = "house-card";
+        card.innerHTML = `
+          <div class="image-box">
+            <img src="${house.image}" alt="${house.name}">
+          </div>
+          <div class="house-info">
+            <h3>${house.name}</h3>
+            <p>${house.location}</p>
+            <p class="price">${house.price}</p>
+            <div class="project-links">
+              <a href="detail.html?id=${originalIndex}" class="btn-project">View Details</a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+      wrapper.appendChild(grid);
+    }
   });
 }
 
-// FILTER
-function filterHouses() {
+// Fixed Search and Filter Logic
+function handleFilter() {
   const text = searchInput.value.toLowerCase();
-  const category = categoryFilter.value;
-  const filtered = houses.filter(h =>
-    h.name.toLowerCase().includes(text) &&
-    (category === "all" || h.type === category)
-  );
+  const cat = categoryFilter.value;
+  
+  const filtered = houses.filter(h => {
+    const matchesName = h.name.toLowerCase().includes(text);
+    const matchesCat = (cat === "all" || h.type === cat);
+    return matchesName && matchesCat;
+  });
+  
   renderHouses(filtered);
 }
 
-searchInput.addEventListener("input", filterHouses);
-categoryFilter.addEventListener("change", filterHouses);
+searchInput.addEventListener("input", handleFilter);
+categoryFilter.addEventListener("change", handleFilter);
 
-
+// Initial Load
 renderHouses(houses);
-
-function openDetailCard(house) {
-
-  document.getElementById("detailTitle").textContent = house.name;
-  document.getElementById("detailLocation").textContent = house.location;
-  document.getElementById("detailPrice").textContent = house.price;
-  document.getElementById("detailType").textContent = house.type;
-
-  document.getElementById("img1").src = house.images[0];
-  document.getElementById("img2").src = house.images[1] || house.images[0];
-  document.getElementById("img3").src = house.images[2] || house.images[0];
-
-  const section = document.getElementById("detailSection");
-  section.style.display = "block";
-
-  section.scrollIntoView({ behavior: "smooth" });
-}
-
-function closeDetail() {
-  document.getElementById("detailSection").style.display = "none";
-}
