@@ -1,5 +1,5 @@
 const houses = [
-  { name: "Skypark Aurora", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" },
+  { name: "Sot dg", type: "Condo", price: "$120,000", location: "Phnom Penh", image: "/Website dad/images/houses/house1.jpg" },
   { name: "Ocean Breeze Villa", type: "Villa", price: "$320,000", location: "Sihanoukville", image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae" },
   { name: "City Townhouse", type: "Townhouse", price: "$180,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c" },
   { name: "Golden Penthouse", type: "Penthouse", price: "$450,000", location: "Phnom Penh", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" },
