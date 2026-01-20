@@ -74,19 +74,6 @@ function filterHouses() {
 searchInput.addEventListener("input", filterHouses);
 categoryFilter.addEventListener("change", filterHouses);
 
-// MODAL FIXED
-function openDetails(house) {
-  document.getElementById("modalImage").src = house.image;
-  document.getElementById("modalName").textContent = house.name;
-  document.getElementById("modalLocation").textContent = "Location: " + house.location;
-  document.getElementById("modalType").textContent = "Type: " + house.type;
-  document.getElementById("modalPrice").textContent = "Price: " + house.price;
-  document.getElementById("houseModal").style.display = "flex";
-}
-
-function closeDetails() {
-  document.getElementById("houseModal").style.display = "none";
-}
 
 renderHouses(houses);
 

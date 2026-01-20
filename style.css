@@ -302,22 +302,6 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
-/* MODAL IMAGE FIX */
-.modal-content img {
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.modal-content {
-  text-align: center;
-}
-
-.modal-content h2 {
-  margin-bottom: 8px;
-}
 
 
 /* ================= RESPONSIVE ================= */
